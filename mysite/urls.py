@@ -20,6 +20,5 @@ from django.urls import path
 from blog.views import hello
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', hello),
+    path('', views.home, name='home')
 ]
